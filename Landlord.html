@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>HomeFindr</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "gray", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT ME</p>
+  </a>
+  <a href="#price" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eur  w3-xxlarge"></i>
+    <p>PRICE</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT ME</a>
+    <a href="#price" class="w3-bar-item w3-button" style="width:25% !important">PRICE</a>
+	
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">John</span> O'Connor.</h1>
+    <p>42 year old landlord with a good history with previous students of all ages.</p>
+	<img src="C:\Users\cproc\Desktop\avatar.jpg" class="w3-margin w3-circle" alt="Person" style="width:40%">
+    <div class="w3-left-align w3-padding-large">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About me!</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Hi, I am looking for a student in galway city centre. My house is located in Woodquay and has 4 rooms, 1 double and 3 single.
+	I am a reasonable, trustworthy landlord who takes students into consideration over professionals as I know how hard it is for students
+	I am looking for students to take on the house for the 9 academic months and maybe more if you can fill the house after the other tenants have left.
+	I have surveys from previous tenants to prove that I am a good landlord & I hope you consider me. Thank you.
+    </p>
+    
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download latest survey </button>
+	  <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download all surveys </button>
+  
+  <!-- Portfolio Section -->
+  </div>
+  <div class="w3-padding-64 w3-content" id="price">
+    <h2 class="w3-text-light-grey">Price</h2>
+    <hr style="width:200px" class="w3-opacity">
+	<p><b>Deposit:</b> A deposit of €400 will have to be paid at the start of the year</p>
+	<p><b>Room cost:</b> Single room: €390 and Double room: €420.</p>
+	<p><b>Electricity:</b> This is normally paid in 2 month intervals and tends to be under €60 unless there is an absurd amount of electricity used </p>
+	<p><b>Internet:</b> Internet & UPC is €50 a month with unlimited data</p>
+	<p><b>Bins:</b> Bins are €60 for the year</p>
+	<p><b>Oil:</b> Although oil is not a necessicity, it is recommended as mould will grow & unfortunately will be deducted from your deposit</p>
+	
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Galway, Ireland</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    </div><br>
+    <p>If you like my profile, please get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
